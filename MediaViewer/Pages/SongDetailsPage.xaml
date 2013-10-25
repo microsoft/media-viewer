@@ -1,0 +1,39 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="MediaViewer.SongPreviewPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:converters="clr-namespace:MediaViewer.Converters"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True">
+
+
+    <UserControl.Resources>
+        <converters:DurationValueConverter x:Name="DurationValueConverter" />
+    </UserControl.Resources>
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <StackPanel>
+            <TextBlock Text="Song details" Margin="24,0,0,24" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
+            <TextBlock Text="Title:" Style="{StaticResource DescriptionItemTitleStyle}"/>
+            <TextBlock Text="{Binding Name}" TextWrapping="Wrap" Style="{StaticResource DescriptionItemContentStyle}"/>
+            <TextBlock Text="Artist:" Style="{StaticResource DescriptionItemTitleStyle}"/>
+            <TextBlock Text="{Binding Artist}" TextWrapping="Wrap" Style="{StaticResource DescriptionItemContentStyle}"/>
+            <TextBlock Text="Album:" Style="{StaticResource DescriptionItemTitleStyle}"/>
+            <TextBlock Text="{Binding Album}" TextWrapping="Wrap" Style="{StaticResource DescriptionItemContentStyle}"/>
+            <TextBlock Text="Genre:" Style="{StaticResource DescriptionItemTitleStyle}"/>
+            <TextBlock Text="{Binding Genre}" TextWrapping="Wrap" Style="{StaticResource DescriptionItemContentStyle}"/>
+            <TextBlock Text="Duration:" Style="{StaticResource DescriptionItemTitleStyle}"/>
+            <TextBlock Text="{Binding Duration, Converter={StaticResource DurationValueConverter}}" Style="{StaticResource DescriptionItemContentStyle}"/>
+        </StackPanel>
+    </Grid>
+
+</phone:PhoneApplicationPage>
