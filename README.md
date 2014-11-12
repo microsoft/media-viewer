@@ -8,11 +8,14 @@ Media Viewer enables the user to explore a list of pictures and music files
 stored on their device. It's also possible to preview an image, play a music 
 file, and check the details of the selected file on a separate page.
 
+![Picture preview](/doc/screenshots/PicturePreview.PNG?raw=true)&nbsp;
+![Song details](/doc/screenshots/SongDetails.PNG?raw=true)
+
 This example application is hosted in GitHub:
-https://github.com/nokia-developer/media-viewer
+https://github.com/Microsoft/media-viewer
 
 For more information on porting, visit the wiki page:
-https://github.com/nokia-developer/media-viewer/wiki
+https://github.com/Microsoft/media-viewer/wiki
 
 This project is compatible with Windows Phone 7 and Windows Phone 8.
 
