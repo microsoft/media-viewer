@@ -11,7 +11,7 @@ file, and check the details of the selected file on a separate page.
 ![Picture preview](/doc/screenshots/PicturePreview.PNG?raw=true)&nbsp;
 ![Song details](/doc/screenshots/SongDetails.PNG?raw=true)
 
-This example application is hosted in GitHub:
+This example application is hosted on GitHub:
 https://github.com/Microsoft/media-viewer
 
 For more information on porting, visit the wiki page:
